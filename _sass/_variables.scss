@@ -14,7 +14,8 @@ $my-red-color:        #8E0A21 !default;
 $orange-color:        #F29105 !default;
 $blue-color:          #0076df !default;
 $blue-color-dark:     #00369f !default;
-$blue-color-cv:       #3873B3 !default;
+$cv-blue-color:       #3873B3 !default;
+$my-blue-color:       #2973CC !default;
 $cyan-color:          #2698BA !default;
 $green-color:         #00ab37 !default;
 $green-color-lime:    #B7D12A !default;
@@ -31,7 +32,7 @@ $grey-color-light:    lighten($grey-color, 40%);
 $grey-color-dark:     darken($grey-color, 25%);
 
 /* Set theme colors *************************/
-$theme-color:         $blue-color-cv;
+$theme-color:         $my-blue-color;
 
 $link-color:          $theme-color;
 $text-color:          #111 !default;

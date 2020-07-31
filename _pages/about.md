@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: <a href="https://warwick.ac.uk/fac/sci/wcpm/">Warwick Centre for Predictive Modelling</a>. School of Engineering. University of Warwick.
 
 profile:
   align: right

@@ -17,6 +17,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Research Fellow working in a field of computational material science. I am interested in application and development of simulation methods bringing different length and timescales.
+I am a Research Fellow working in a field of computational material science. I am interested in application and development of simulation methods bringing different length and timescales. Rese
 
-You can find my publications with all the details and pdf version on the [publications page](/al-folio/publications/). More traditional version of my CV can be downloaded <a href="/al-folio/assets/pdf/Grigorev_CV.pdf" target="_blank" title="download CV"> here <i class="far fa-file-pdf" aria-hidden="true"></i></a>.
+You can find my publications with all the details and pdf version on the [publications page](/al-folio/publications/). More traditional version of my CV can be downloaded here: <a href="/al-folio/assets/pdf/Grigorev_CV.pdf" target="_blank" title="download CV"> <i class="far fa-file-pdf" aria-hidden="true"></i> CV</a>.

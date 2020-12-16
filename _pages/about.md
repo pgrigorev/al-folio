@@ -29,8 +29,4 @@ However I spent most of my time at [Belgian Nuclear Research Centre SCK•CEN](h
 I defended my Ph.D. in April 2017 and, shortly after that, joined [Warwick Centre for Predictive Modelling](https://warwick.ac.uk/fac/sci/wcpm/) as a Research Fellow.
 In December 2020 I started as a postdoc at the [Départment Théorie et Simulation Numérique](https://www.cinam.univ-mrs.fr/cinam/team/theorie-et-simulation-numerique/) of [Centre Interdisciplinaire de Nanoscience de Marseille (CINaM)](https://www.cinam.univ-mrs.fr).
 
-Traditional detailed version of my CV can be downloaded here: <a href="/assets/pdf/Grigorev_CV.pdf" target="_blank" title="download CV"> <i class="far fa-file-pdf" aria-hidden="true"></i> CV</a>.
-
-You can find my publications with all the details and some pdf versions on the [publications page](/publications/).
-
-I will also do my best to post here news and updates often.
+Traditional detailed version of my CV can be downloaded here: <a href="/assets/pdf/Grigorev_CV.pdf" target="_blank" title="download CV"> <i class="far fa-file-pdf" aria-hidden="true"></i> CV</a>. You can find my publications with all the details and some pdf versions on the [publications page](/publications/).

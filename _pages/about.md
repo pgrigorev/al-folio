@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <a href="https://warwick.ac.uk/fac/sci/wcpm/"> Warwick Centre for Predictive Modelling</a> • School of Engineering • University of Warwick
+description: <a href="https://www.cinam.univ-mrs.fr/"> Centre Interdisciplinaire de Nanoscience de Marseille </a> • <a href="https://www.cinam.univ-mrs.fr/cinam/team/theorie-et-simulation-numerique/"> Départment Théorie et Simulation Numérique </a>
 
 profile:
   align: right

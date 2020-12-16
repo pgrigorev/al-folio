@@ -9,7 +9,7 @@ I am excited to start my work together with [Dr Thomas Swinburne](https://tomswi
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Lyminy.jpg' | relative_url }}" alt="" title="Accuel de Luminy"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Lyminy.jpg' | relative_url }}" alt="" title="Accueil de Luminy"/>
     </div>
 </div>
 <div class="caption">

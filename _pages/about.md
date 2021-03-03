@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I am a Research Fellow working in the field of computational material science.
-I am interested in application and development of simulation methods bringing different length and time scales.
+I am interested in application and development of simulation methods bridging different length and time scales.
 Recently I have been working on incorporating methods of reproducible research, uncertainty quantification and machine learning in multiscale modelling approach.
 
 ###### **Short bio**

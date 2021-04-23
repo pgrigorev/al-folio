@@ -143,12 +143,9 @@ github: [metadata]
 
 scholar:
 
-<<<<<<< HEAD
+
   last_name: Grigorev
-=======
-  last_name: Einstein
-  first_name: [Albert, A.]
->>>>>>> upstream/master
+  first_name: Petr
 
   style: apa
   locale: en

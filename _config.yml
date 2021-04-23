@@ -43,13 +43,8 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-<<<<<<< HEAD
 github_username: pgrigorev # your GitHub user name
 gitlab_username: pgrigorev # your GitLab user name
-=======
-github_username: # your GitHub user name
-gitlab_username: # your GitLab user name
->>>>>>> upstream/master
 twitter_username: # your Twitter handle
 linkedin_username: grigorev-petr-915a3468 # your LinkedIn user name
 scholar_userid: 6qZpPNgAAAAJ # your Google Scholar ID

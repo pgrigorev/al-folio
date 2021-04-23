@@ -4,10 +4,14 @@
 
 // Typography
 
+p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
+  color: var(--global-text-color);
+}
+
 a, table.table a {
-  color: $theme-color;
+  color: var(--global-theme-color);
   &:hover {
-    color: $theme-color;
+    color: var(--global-theme-color);
     text-decoration: underline;
   }
   &:hover:after {
@@ -31,6 +35,10 @@ a, table.table a {
   text-align: center;
 }
 
+// Citation
+.citation, .citation-number {
+  color: var(--global-theme-color);
+}
 
 // Profile
 
@@ -61,11 +69,11 @@ a, table.table a {
 
 .post-description {
   margin-bottom: 2rem;
+  font-size: 0.875rem;
   a {
     color: inherit;
-    font-size: 0.875rem;
     &:hover {
-      color: $theme-color;
+      color: var(--global-theme-color);
       text-decoration: none;
     }
   }
@@ -77,34 +85,45 @@ a, table.table a {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid $grey-color-light;
+  background-color: var(--global-bg-color);
   opacity: 0.95;
 }
 .navbar.navbar-light {
-  // Remove link decoration
   a {
     &:hover {
       text-decoration: none;
     }
   }
+  .navbar-brand {
+    color: var(--global-text-color);
+  }
   .navbar-nav .nav-item .nav-link {
+    color: var(--global-text-color);
     &:hover {
-      color: $theme-color;
+      color: var(--global-hover-color);
     }
   }
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
-      color: $theme-color;
       font-weight: bolder;
+      color: var(--global-theme-color);
       &:hover {
-        color: $theme-color;
+        color: var(--global-hover-color);
       }
   }
-  .contact-icon {
-    font-size: 2rem;
+  .navbar-brand.social {
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 1.7rem;
     a {
-      color: $grey-color-dark;
+      i::before {
+        color: var(--global-text-color);
+        -webkit-transition: all 0.2s ease-in-out;
+      }
       &:hover {
-        color: $theme-color;
+        i::before {
+          color: var(--global-theme-color);
+        }
       }
     }
   }
@@ -115,7 +134,7 @@ a, table.table a {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: $grey-color-dark;
+    background-color: var(--global-text-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -150,19 +169,28 @@ a, table.table a {
 
 .news table td {
   font-size: 1rem;
+  color: var(--global-text-color);
 }
 
+.news table th {
+  color: var(--global-text-color);
+}
 
 // Social (bottom)
 
 .social {
   text-align: center;
-  .contact-icon {
+  .contact-icons {
     font-size: 4rem;
     a {
-      color: $grey-color-dark;
+      i::before {
+        color: var(--global-text-color);
+        -webkit-transition: all 0.2s ease-in-out;
+      }
       &:hover {
-        color: $theme-color;
+        i::before {
+          color: var(--global-theme-color);
+        }
       }
     }
   }
@@ -173,19 +201,18 @@ a, table.table a {
 
 
 // Footer
-
 footer.fixed-bottom {
-  color: lighten($grey-color, 25%);
-  background-color: $grey-color-dark;
+  background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
   .container {
+    color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
   }
   a {
-    color: white;
+    color: var(--global-footer-link-color);
     &:hover {
-      color: lighten($theme-color, 25%);
+      color: var(--global-theme-color);
       text-decoration: none;
     }
   }
@@ -207,7 +234,7 @@ footer.sticky-bottom {
   padding-top: 2rem;
   padding-bottom: 5rem;
   h1 {
-    color: $theme-color;
+    color: var(--global-theme-color);
     font-size: 5rem;
   }
 }
@@ -222,24 +249,35 @@ footer.sticky-bottom {
     padding-top: 2rem;
     padding-bottom: 2rem;
     .post-meta {
-      color: $grey-color;
+      color: var(--global-text-color-light);
       font-size: 0.875rem;
       margin-bottom: 0;
     }
     a {
-      color: black;
+      color: var(--global-text-color);
       text-decoration: none;
       &:hover {
-        color: $theme-color;
+        color: var(--global-theme-color);
       }
     }
   }
 }
 
-.pagination .page-item.active .page-link {
-  background-color: $theme-color;
-  &:hover {
-    background-color: $theme-color;
+.pagination {
+  .page-item {
+    .page-link {
+      color: var(--global-text-color);
+      &:hover {
+        color: $black-color;
+      }
+    }
+    &.active .page-link {
+      color: $white-color;
+      background-color: var(--global-theme-color);
+      &:hover {
+        background-color: var(--global-theme-color);
+      }
+    }
   }
 }
 
@@ -248,7 +286,7 @@ footer.sticky-bottom {
 
 .distill {
   a:hover {
-    border-bottom-color: $theme-color;
+    border-bottom-color: var(--global-theme-color);
     text-decoration: none;
   }
 }
@@ -257,19 +295,56 @@ footer.sticky-bottom {
 // Projects
 
 .projects {
-  .grid-item {
-    width: 250px;
+  .card-item {
+    width: auto;
     margin-bottom: 10px;
+
     a {
-      color: black;
       text-decoration: none;
-      &:hover {
-        color: $theme-color;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .card {
+      img {
+        width: 100%;
       }
     }
   }
-  .card img {
-    width: 100%;
+
+  .grid-item {
+    width: 250px;
+    margin-bottom: 10px;
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+
+    .card {
+      img {
+        width: 100%;
+      }
+      .card-title {
+        color: $black-color;
+      }
+    }
+  }
+
+  h2.category {
+    color: $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
   }
 }
 
@@ -279,7 +354,7 @@ footer.sticky-bottom {
 .publications {
   margin-top: 2rem;
   h1 {
-    color: $theme-color;
+    color: var(--global-theme-color);
     font-size: 2rem;
     text-align: center;
     margin-top: 1em;
@@ -311,7 +386,7 @@ footer.sticky-bottom {
         margin-bottom: 0.5rem;
         abbr {
           display: inline-block;
-          background-color: $theme-color;
+          background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
           a {
@@ -322,8 +397,8 @@ footer.sticky-bottom {
           }
         }
         .award {
-          color: $theme-color !important;
-          border: 1px solid $theme-color;
+          color: var(--global-theme-color) !important;
+          border: 1px solid var(--global-theme-color);
         }
       }
       .title {
@@ -331,7 +406,7 @@ footer.sticky-bottom {
       }
       .author {
         a {
-          border-bottom: 1px dashed $theme-color;
+          border-bottom: 1px dashed var(--global-theme-color);
           &:hover {
               border-bottom-style: solid;
               text-decoration: none;
@@ -344,15 +419,15 @@ footer.sticky-bottom {
       }
       .links {
         a.btn {
-          color: $text-color;
-          border: 1px solid $text-color;
+          color: var(--global-text-color);
+          border: 1px solid var(--global-text-color);
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           &:hover {
-            color: $theme-color;
-            border-color: $theme-color;
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
           }
         }
       }
@@ -386,11 +461,45 @@ footer.sticky-bottom {
         transition: all 0.15s ease;
       }
       div.abstract.hidden {
-        border: dashed 1px white;
+        border: dashed 1px var(--global-bg-color);
       }
       div.abstract.hidden.open {
-        border-color: $grey-color;
+        border-color: var(--global-text-color);
       }
     }
   }
+}
+
+// Rouge Color Customization
+figure.highlight {
+  margin: 0 0 1rem;
+}
+
+pre {
+  color: var(--global-theme-color);
+  background-color: var(--global-code-bg-color);
+  border-radius: 6px;
+  padding: 6px 12px;
+  pre, code {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
+code {
+  color: var(--global-theme-color);
+  background-color: var(--global-code-bg-color);
+  border-radius: 3px;
+  padding: 3px 3px;
+}
+
+
+// Transitioning Themes
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }

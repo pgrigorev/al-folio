@@ -1,7 +1,7 @@
 ---
 layout: page
-title: qm/ml synergy
-description: coupling QM/ML with machine learning
+title: QM/ML for ML
+description: and ML for QM/ML
 img: /assets/img/QMML_preview.png
 importance: 2
 category: work

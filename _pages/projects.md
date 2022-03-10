@@ -2,9 +2,9 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Introduction to ongoing projects.
+description: An introduction to ongoing projects.
 nav: true
-display_categories: [work]
+display_categories: 
 horizontal: false
 ---
 <div class="projects">

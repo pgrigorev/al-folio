@@ -10,7 +10,7 @@ bibliography: 2018-12-22-distill.bib
 
 ---
 
-The problem of scientific software reliability and reproducibility of the results in computational science was recognised a while ago <d-cite key="merali2010computational"></d-cite>. I do my best to incorporate best practices of scientific software development and share my codes within these open source projects:
+The problem of scientific software reliability and reproducibility of the results in computational science was recognised a while ago <d-cite key="merali2010computational,Baker2016"></d-cite>. I am committed to incorporate best practices of open and reproducible research <d-cite key="Mesirov2010, manifesto"></d-cite> in scientific software development and share my codes within these open source projects:
 
 - `ASE`- [Atomic Simulation Environment: A Python library for working with atoms](https://wiki.fysik.dtu.dk/ase/).
 
@@ -20,4 +20,4 @@ The problem of scientific software reliability and reproducibility of the result
 
     Here my main contribution is a [set of tools](https://github.com/libAtoms/matscipy/blob/master/matscipy/dislocation.py) for creating and analysing atomistic configurations containing various types of dislocations in cubic crystals.
 
-Normally for every publication I provide a link to the data and the scripts that I used to obtain the results. Running these scripts requires installation of ASE and matscipy and can be done by following instructions in README files. If you struggle with using these codes please do not hesitate to [contact me](mailto:Petr.Y.Grigorev@gmail.com).
+Normally for every publication I provide a link a repository containing raw data and analysis pipelines. Execution of these pipelines requires installation of ASE and matscipy and can be done by following instructions in README files. If you struggle with using these codes or have any other feedback please do not hesitate to [contact me](mailto:Petr.Y.Grigorev@gmail.com).

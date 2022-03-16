@@ -2,7 +2,7 @@
 layout: distill
 title: dislocations
 description: towards QM accuracy
-img: /assets/img/He_3d_perspective_boundaries.png
+img: /assets/img/QMML_preview.png
 importance: 1
 category: work
 
@@ -30,7 +30,7 @@ $$
          \end{cases}
 $$
 
-where $$\bf X$$ is atomic coordinates vector and $$\mathrm{QM}$$ denotes QM region shown with blue color. The position of the atoms are then updated according to the QM/ML force $$\bf F_{\mathrm{QM/MM}}$$ during ionic minimisation.
+where $$\bf X$$ is atomic coordinates vector and $$\mathrm{QM}$$ denotes QM region shown with blue color. The position of the atoms are then updated according to the QM/MM force $$\bf F_{\mathrm{QM/MM}}$$ during ionic minimisation.
 An important aspect of hybrid QM/MM simulations is the need to have a buffer of sacrificial DFT atoms (shown with orange color), suitably large to protect the target cluster from electronic free surface effects.
 
 This method provides a unique tool to study dislocations with *ab initio* accuracy <d-cite key="QMMM_H_SD"></d-cite>. Moreover, further extension of the capabilities is possible by combination of the method with recent developments in machine learning based force fields <d-cite key="PhysRevMaterials.5.103803"></d-cite>. Exploration of this possibility is the main topic of [this project](/projects/qmml).  

@@ -9,7 +9,7 @@ category: work
 bibliography: 2018-12-22-distill.bib
 ---
 
-The [previous project](/projects/dislocations) discussed the limitations *ab initio* methods when applied to study dislocations and how hybrid QM/MM methods can be used to overcome these limitations.
+The [previous project](/projects/qm_dislocations) discussed the limitations *ab initio* methods when applied to study dislocations and how hybrid QM/MM methods can be used to overcome these limitations.
 The fact that there is a lack of *ab initio* data for dislocations means that these structures are absent in the training databases used for interatomic potential development. Thus, while using these force fields for large scale simulations of dislocations the user largely rely on the predictive power of the potential <d-cite key="Unke2021"></d-cite>. On top of that, it is impossible to estimate the accuracy of the potentials in the extrapolation regime *once again* due to the lack of reference *ab initio* data.
 
 This project explores how recent Machine Learning based force fields <d-cite key="goryaeva2019towards,PhysRevMaterials.5.103803"></d-cite> can be used in hybrid QM/ML (MM is replaced with ML for Machine Learning) to provide *ab initio* accurate data on dislocations.

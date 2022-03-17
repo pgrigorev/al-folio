@@ -12,7 +12,7 @@
     </style>
     {% endif %}
   </head>
-
+  {% if page.authors %},
   <d-front-matter>
     <script async type="text/json">{
       "title": "{{ page.title }}",
@@ -48,7 +48,7 @@
       }
     }</script>
   </d-front-matter>
-
+  {% endif %}
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
     <!-- Header -->
@@ -64,7 +64,7 @@
         <p>{{ page.description }}</p>
       </d-title>
 
-      <d-byline></d-byline>
+      {% if page.authors %}, <d-byline></d-byline> {% endif %}
 
       <d-article>
         {{ content }}

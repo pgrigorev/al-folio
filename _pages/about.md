@@ -29,6 +29,6 @@ The same year I enrolled in a Ph.D. program shared between [Ghent University](ht
 However I spent most of my time at [Belgian Nuclear Research Centre SCK•CEN](https://www.sckcen.be/en) in Mol, Belgium working on my research project together with [Structural Materials expert group](https://www.sckcen.be/en/expertises/materials/safe-operation).
 
 I defended my **Ph.D. in April 2017** and, shortly after that, joined [Warwick Centre for Predictive Modelling](https://warwick.ac.uk/fac/sci/wcpm/) as a Research Fellow.
-In **December 2020** I started as a postdoc at the [Départment Théorie et Simulation Numérique](https://www.cinam.univ-mrs.fr/cinam/team/theorie-et-simulation-numerique/) of [Centre Interdisciplinaire de Nanoscience de Marseille (CINaM)](https://www.cinam.univ-mrs.fr).
+In **December 2020** I started as a **postdoc** at the [Départment Théorie et Simulation Numérique](https://www.cinam.univ-mrs.fr/cinam/team/theorie-et-simulation-numerique/) of [Centre Interdisciplinaire de Nanoscience de Marseille (CINaM)](https://www.cinam.univ-mrs.fr).
 
 Traditional detailed version of my CV can be downloaded here: <a href="/assets/pdf/Grigorev_CV.pdf" target="_blank" title="download CV"> <i class="far fa-file-pdf" aria-hidden="true"></i> CV</a>. You can find my publications with all the details and some pdf versions on the [publications page](/publications/).

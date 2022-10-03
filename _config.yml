@@ -12,22 +12,10 @@ description: > # this means to ignore newlines until "url:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-<<<<<<< HEAD
-
 
 icon: # the emoji used as the favicon
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
-=======
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
-
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
->>>>>>> upstream/master
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -79,16 +67,9 @@ github_username: pgrigorev # your GitHub user name
 gitlab_username: pgrigorev # your GitLab user name
 telegram_username: pgrigore # your GitLab user name
 twitter_username: # your Twitter handle
-<<<<<<< HEAD
 linkedin_username: grigorev-petr-915a3468 # your LinkedIn user name
 scholar_userid: 6qZpPNgAAAAJ # your Google Scholar ID
 orcid_id: 0000-0002-6409-9092 # your ORCID ID
-=======
-linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
-semanticscholar_id: # your Semantic Scholar ID
-orcid_id: # your ORCID ID
->>>>>>> upstream/master
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -125,12 +106,10 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-<<<<<<< HEAD
 blog_name: #al-folio  # your blog must have a name for it to show up in the nav bar
-=======
-blog_name: al-folio # blog_name will be displayed in your blog page
+
+
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
->>>>>>> upstream/master
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 

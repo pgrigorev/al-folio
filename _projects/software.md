@@ -10,7 +10,7 @@ bibliography: 2018-12-22-distill.bib
 
 ---
 
-The problem of software reliability and reproducibility of the results in computational science was recognised a while ago <d-cite key="merali2010computational,Baker2016"></d-cite>. I am committed to incorporate the best practices of open and reproducible research <d-cite key="Mesirov2010, manifesto"></d-cite> in scientific software development and share my codes within these open source projects:
+The problem of software reliability and reproducibility of the results in computational science was recognised a while ago <d-cite key="merali2010computational,Baker2016"></d-cite>. I am committed to incorporate the best practices of open and reproducible research <d-cite key="Mesirov2010, manifesto, FAIR"></d-cite> in scientific software development and share my codes within these open source projects:
 
 - `ASE`- [Atomic Simulation Environment: A Python library for working with atoms](https://wiki.fysik.dtu.dk/ase/).
 

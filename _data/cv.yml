@@ -66,17 +66,17 @@
   contents:
     - title: <a href="https://github.com/libAtoms/matscipy">matscipy</a>
       year: 2018-now
-      description: Materials science with Python at the atomic-scale.
+      institution: Materials science with Python at the atomic-scale. # institution entry does not create dots as for items and description
 
     - title: <a href="https://gitlab.com/ase/ase">Atomic Simulation Environmen (ASE)</a>
       year: 2020-now
-      description: "A Python library for working with atoms."
+      institution: "A Python library for working with atoms."
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2020
-      items:
+      institution:
         - Warwick Faculty of Science, Engineering and Medicine Post-doctoral Research Prize
 
 - title: Academic Interests

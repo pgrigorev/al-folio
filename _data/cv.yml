@@ -15,18 +15,19 @@
       institution: <a href="https://www.ugent.be/en">Ghent University</a>/<a href="https://www.ucm.es/english">Complutense University of Madrid</a>
       year: 2017
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - '<b> Thesis</b>: <a href="/assets/pdf/PhD_Grigorev.pdf">Assessment of retention of plasma components in tungsten under high flux plasma exposure: multi-scale modelling approach</a>'
+        - '<b> Supervisors</b>: Dr. Dmitry Terentyev, Dr. Christophe Ortiz'
+#        - title: '<b> Achievements: </b>'
+#          contents:
+#            - Analysis of ab initio data and development of the model of dislocation mediated H retention in tungsten.
+#            - Development of an interatomic potential for W-H-He system and performing a large number of Molecular Dynamics (MD) simulations.
+#            - Implementation of the model in a Rate Theory simulation tool and its validation by comparison with experimental results.
     - title: Master in Physics
       institution: <a href="https://english.spbstu.ru/university/">Peter the Great St.Petersburg Polytechnic University</a>
       year: 2012
       description:
-        - Description 1.
-        - Description 2.
+        - '<b> Thesis</b>: Molecular dynamics study of sputtering of Al, Si and SiC surfaces and nanoclusters by monoatomic and nanocluster beams'
+        - '<b> Supervisor</b>: Dr. Evgeny E. Zhurkin'
 
 - title: Experience
   type: time_table

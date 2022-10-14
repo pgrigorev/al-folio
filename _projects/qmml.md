@@ -2,7 +2,7 @@
 layout: distill
 title: QM/ML for ML
 description: and ML for QM/ML
-img: /assets/img/He_3d_perspective_boundaries.png
+img: /assets/img/dislo_electrons_with_vitek_scaled.png
 importance: 2
 category: work
 

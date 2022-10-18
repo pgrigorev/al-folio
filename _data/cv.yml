@@ -8,6 +8,39 @@
     - name: Languages
       value: English, French, Russian
 
+- title: Experience
+  type: time_table
+  contents:
+    - title: Post-Doctoral Researcher
+      institution: <a href="https://www.cinam.univ-mrs.fr/cinam/">Centre Interdisciplinaire de Nanoscience de Marseille</a>, France
+      year: 2020 - present
+      description:
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Research Fellow
+      institution: <a href="https://warwick.ac.uk/fac/sci/wcpm/#:~:text=The%20Warwick%20Centre%20for%20Predictive,in%20science%20and%20engineering%20research.">University of Warwick</a>, Coventry, UK
+      year: 2017 - 2020
+      description:
+        - Description 1.
+        - Description 2.
+
+    - title: Ph.D. Student
+      institution: <a href="https://www.sckcen.be/en">Belgian Nuclear Research Centre SCK&#8226;CEN</a>, Mol, Belgium
+      year: 1917-1933
+
+#    - title: Professor of Theoretical Physics
+#      institution: Karl-Ferdinand University, Prague, Czechoslovakia
+#      year: 1911 - 1917
+#      description:
+
+#    - title: Associate Professor of Theoretical Physics
+#      institution: University of Zurich, Zurich, Switzerland
+#      year: 1909 - 1911
+
 - title: Education
   type: time_table
   contents:
@@ -29,38 +62,6 @@
         - '<b> Thesis</b>: Molecular dynamics study of sputtering of Al, Si and SiC surfaces and nanoclusters by monoatomic and nanocluster beams'
         - '<b> Supervisor</b>: Dr. Evgeny E. Zhurkin'
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
 
 - title: Open Source Projects
   type: time_table

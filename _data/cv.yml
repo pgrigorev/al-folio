@@ -12,7 +12,7 @@
   type: time_table
   contents:
     - title: Post-Doctoral Researcher
-      institution: <a href="https://www.cinam.univ-mrs.fr/cinam/">Centre Interdisciplinaire de Nanoscience de Marseille</a>, France
+      institution: <a href="https://www.cinam.univ-mrs.fr/cinam/">Centre Interdisciplinaire de Nanoscience de Marseille</a>, Marseille, France
       year: 2020 - present
       description:
         - Description 1.
@@ -22,7 +22,7 @@
             - Sub-description 1.
             - Sub-description 2.
     - title: Research Fellow
-      institution: <a href="https://warwick.ac.uk/fac/sci/wcpm/#:~:text=The%20Warwick%20Centre%20for%20Predictive,in%20science%20and%20engineering%20research.">University of Warwick</a>, Coventry, UK
+      institution: <a href="https://warwick.ac.uk/fac/sci/wcpm/#:~:text=The%20Warwick%20Centre%20for%20Predictive,in%20science%20and%20engineering%20research.">University of Warwick</a>, Coventry, United Kingdom
       year: 2017 - 2020
       description:
         - Description 1.
@@ -81,19 +81,19 @@
       institution:
         - Warwick Faculty of Science, Engineering and Medicine Post-doctoral Research Prize
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
+#- title: Academic Interests
+#  type: nested_list
+#  contents:
+#    - title: Topic 1.
+#      items:
+#        - Description 1.
+#        - Description 2.
+#    - title: Topic 2.
+#      items:
+#        - Description 1.
+#        - Description 2.
+#
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "<u>Hobbies:</u> In my free time I like to do outdoor activites: hiking, snowboarding, sailing."

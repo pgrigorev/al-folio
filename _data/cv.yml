@@ -2,96 +2,103 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Petr Grigorev
     - name: Date of Birth
-      value: 14th March 1879
+      value: 3rd December 1989
     - name: Languages
-      value: English, German
-
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+      value: English (C1), French (A2), Russian (native)
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Post-Doctoral Researcher
+      institution: <a href="https://www.cinam.univ-mrs.fr/cinam/">Centre Interdisciplinaire de Nanoscience de Marseille</a>, Marseille, France
+      year: 2020 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Development of novel hybrid <i>ab initio</i>-machine learning (QM/ML) method enabling large scale simulations of extended defects with <i>ab initio</i> accuracy.
+        - QM/ML study of interaction of point defects with dislocations and kinks in tungsten.
+        - Coupling of QM/ML approach with advanced sampling techniques for rare event discovery and evaluation aiming at `active learning` type workflow.
+    #    - title: Description 3.
+    #      contents:
+    #        - Sub-description 1.
+    #        - Sub-description 2.
+    - title: Research Fellow
+      institution: <a href="https://warwick.ac.uk/fac/sci/wcpm/#:~:text=The%20Warwick%20Centre%20for%20Predictive,in%20science%20and%20engineering%20research.">University of Warwick</a>, Coventry, United Kingdom
+      year: 2017 - 2020
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Development and validation of hybrid <i>ab initio</i>-molecular mechanics (QM/MM) method.
+        - QM/MM studies of screw dislocation glide and crack propagation in tungsten in presence of hydrogen.
+        - Development of machine learning potentials, uncertainty quantification and propagation.
+    - title: Ph.D. Student
+      institution: <a href="https://www.sckcen.be/en">Belgian Nuclear Research Centre SCK&#8226;CEN</a>, Mol, Belgium
+      year: 2012 - 2017
       description:
+        - Development of a physical model of dislocation mediated hydrogen retention in tungsten.
+        - <i>Ab initio</i> calculations, development of classical interatomic potential for W-H-He system and large scale Molecular Dynamics simulations.
+        - Development of Rate-Theory based model of hydrogen retention under plasma exposure and its validation against experimental results.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+#    - title: Professor of Theoretical Physics
+#      institution: Karl-Ferdinand University, Prague, Czechoslovakia
+#      year: 1911 - 1917
+#      description:
+
+#    - title: Associate Professor of Theoretical Physics
+#      institution: University of Zurich, Zurich, Switzerland
+#      year: 1909 - 1911
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Engineering Physics
+      institution: <a href="https://www.ugent.be/en">Ghent University</a>/<a href="https://www.ucm.es/english">Complutense University of Madrid</a>
+      year: 2017
+      description:
+        - '<b> Thesis</b>: <a href="/assets/pdf/PhD_Grigorev.pdf">Assessment of retention of plasma components in tungsten under high flux plasma exposure: multi-scale modelling approach</a>'
+        - '<b> Supervisors</b>: Dr. Dmitry Terentyev, Dr. Christophe Ortiz'
+#        - title: '<b> Achievements: </b>'
+#          contents:
+#            - Analysis of ab initio data and development of the model of dislocation mediated H retention in tungsten.
+#            - Development of an interatomic potential for W-H-He system and performing a large number of Molecular Dynamics (MD) simulations.
+#            - Implementation of the model in a Rate Theory simulation tool and its validation by comparison with experimental results.
+    - title: Master in Physics
+      institution: <a href="https://english.spbstu.ru/university/">Peter the Great St.Petersburg Polytechnic University</a>
+      year: 2012
+      description:
+        - '<b> Thesis</b>: Molecular dynamics study of sputtering of Al, Si and SiC surfaces and nanoclusters by monoatomic and nanocluster beams'
+        - '<b> Supervisor</b>: Dr. Evgeny E. Zhurkin'
+
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/libAtoms/matscipy">matscipy</a>
+      year: 2018-now
+      institution: Materials science with Python at the atomic-scale. # institution entry does not create dots as for items and description
+
+    - title: <a href="https://gitlab.com/ase/ase">Atomic Simulation Environmen (ASE)</a>
+      year: 2020-now
+      institution: "A Python library for working with atoms."
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+    - year: 2020
+      institution:
+        - Warwick Faculty of Science, Engineering and Medicine Post-doctoral Research Prize
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
+#- title: Academic Interests
+#  type: nested_list
+#  contents:
+#    - title: Topic 1.
+#      items:
+#        - Description 1.
+#        - Description 2.
+#    - title: Topic 2.
+#      items:
+#        - Description 1.
+#        - Description 2.
+#
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "<u>Hobbies:</u> When I manage to get away from my computer I like to do outdoor activites such as hiking, cycling, sailing and snowboarding."

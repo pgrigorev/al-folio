@@ -6,7 +6,7 @@
     - name: Date of Birth
       value: 3rd December 1989
     - name: Languages
-      value: English, French, Russian
+      value: English (C1), French (A2), Russian (native)
 
 - title: Experience
   type: time_table
@@ -17,7 +17,7 @@
       description:
         - Development of novel hybrid <i>ab initio</i>-machine learning (QM/ML) method enabling large scale simulations of extended defects with <i>ab initio</i> accuracy.
         - QM/ML study of interaction of point defects with dislocations and kinks in tungsten.
-        - Coupling of QM/ML approach with advanced sampling techniques for rare event discovery and evaluation aiming at `active learning` type general scheme.
+        - Coupling of QM/ML approach with advanced sampling techniques for rare event discovery and evaluation aiming at `active learning` type workflow.
     #    - title: Description 3.
     #      contents:
     #        - Sub-description 1.
@@ -31,11 +31,11 @@
         - Development of machine learning potentials, uncertainty quantification and propagation.
     - title: Ph.D. Student
       institution: <a href="https://www.sckcen.be/en">Belgian Nuclear Research Centre SCK&#8226;CEN</a>, Mol, Belgium
-      year: 2012-2017
+      year: 2012 - 2017
       description:
         - Development of a physical model of dislocation mediated hydrogen retention in tungsten.
         - <i>Ab initio</i> calculations, development of classical interatomic potential for W-H-He system and large scale Molecular Dynamics simulations.
-        - Development of Rate-Theory based model of hydrogen retention under plasma exposure and its validation with experimental results.
+        - Development of Rate-Theory based model of hydrogen retention under plasma exposure and its validation against experimental results.
 
 #    - title: Professor of Theoretical Physics
 #      institution: Karl-Ferdinand University, Prague, Czechoslovakia
@@ -101,4 +101,4 @@
 - title: Other Interests
   type: list
   contents:
-    - "<u>Hobbies:</u> In my free time I like to do outdoor activites: hiking, snowboarding, sailing."
+    - "<u>Hobbies:</u> When I manage to get away from my computer I like to do outdoor activites such as hiking, cycling, sailing and snowboarding."

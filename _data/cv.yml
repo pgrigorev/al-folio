@@ -72,11 +72,11 @@
   type: time_table
   contents:
     - title: <a href="https://github.com/libAtoms/matscipy">matscipy</a>
-      year: 2018-now
+      year: since 2018
       institution: Materials science with Python at the atomic-scale. # institution entry does not create dots as for items and description
 
     - title: <a href="https://gitlab.com/ase/ase">Atomic Simulation Environmen (ASE)</a>
-      year: 2020-now
+      year: since 2020
       institution: "A Python library for working with atoms."
 
 - title: Honors and Awards

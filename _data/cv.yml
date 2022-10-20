@@ -15,7 +15,7 @@
       institution: <a href="https://www.cinam.univ-mrs.fr/cinam/">Centre Interdisciplinaire de Nanoscience de Marseille</a>, Marseille, France
       year: 2020 - present
       description:
-        - Development of novel hybrid <i>ab initio</i>-machine learning (QM/ML) method enabling large scale simulations of extended defects with <i>ab initio</i> accuracy.
+        - Development of novel <a href="/projects/qmml">hybrid <i>ab initio</i>-machine learning (QM/ML) method</a> enabling large scale simulations of extended defects with <i>ab initio</i> accuracy.
         - QM/ML study of interaction of point defects with dislocations and kinks in tungsten.
         - Coupling of QM/ML approach with advanced sampling techniques for rare event discovery and evaluation aiming at `active learning` type workflow.
     #    - title: Description 3.
@@ -26,7 +26,7 @@
       institution: <a href="https://warwick.ac.uk/fac/sci/wcpm/#:~:text=The%20Warwick%20Centre%20for%20Predictive,in%20science%20and%20engineering%20research.">University of Warwick</a>, Coventry, United Kingdom
       year: 2017 - 2020
       description:
-        - Development and validation of hybrid <i>ab initio</i>-molecular mechanics (QM/MM) method.
+        - Development and validation of <a href="/projects/qm_dislocations">hybrid <i>ab initio</i>-molecular mechanics (QM/MM) method</a>.
         - QM/MM studies of screw dislocation glide and crack propagation in tungsten in presence of hydrogen.
         - Development of machine learning potentials, uncertainty quantification and propagation.
     - title: Ph.D. Student

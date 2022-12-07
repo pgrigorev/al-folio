@@ -283,3 +283,20 @@ abstract = {Concurrent multiscale coupling is a powerful tool for obtaining quan
   publisher = {American Physical Society},
   url = {https://link.aps.org/doi/10.1103/PhysRevLett.129.046102}
 }
+
+
+@article{Nieves2021,
+title = {MAELAS: MAgneto-ELAStic properties calculation via computational high-throughput approach},
+journal = {Computer Physics Communications},
+volume = {264},
+pages = {107964},
+year = {2021},
+issn = {0010-4655},
+doi = {https://doi.org/10.1016/j.cpc.2021.107964},
+url = {https://arxiv.org/pdf/2009.01638.pdf},
+author = {P. Nieves and S. Arapan and S.H. Zhang and A.P. Kądzielawa and R.F. Zhang and D. Legut},
+keywords = {Magnetostriction, Magnetoelasticity, High-throughput computation, First-principles calculations},
+abstract = {In this work, we present the program MAELAS to calculate magnetocrystalline anisotropy energy, anisotropic magnetostrictive coefficients and magnetoelastic constants in an automated way by Density Functional Theory calculations. The program is based on the length optimization of the unit cell proposed by Wu and Freeman to calculate the magnetostrictive coefficients for cubic crystals. In addition to cubic crystals, this method is also implemented and generalized for other types of crystals that may be of interest in the study of magnetostrictive materials. As a benchmark, some tests are shown for well-known magnetic materials.
+Program summary
+Program Title: MAELAS CPC Library link to program files: https://doi.org/10.17632/gxcdg3z7t6.1 Developer’s repository link: https://github.com/pnieves2019/MAELAS Code Ocean capsule: https://codeocean.com/capsule/0361425 Licensing provisions: BSD 3-clause Programming language: Python3 Nature of problem: To calculate anisotropic magnetostrictive coefficients and magnetoelastic constants in an automated way based on Density Functional Theory methods. Solution method: In the first stage, the unit cell is relaxed through a spin-polarized calculation without spin-orbit coupling. Next, after a crystal symmetry analysis, a set of deformed lattice and spin configurations are generated using the pymatgen library [1]. The energy of these states is calculated by the first-principles code VASP [3], including the spin-orbit coupling. The anisotropic magnetostrictive coefficients are derived from the fitting of these energies to a quadratic polynomial [2]. Finally, if the elastic tensor is provided [4], then the magnetoelastic constants are also calculated. Additional comments including restrictions and unusual features: This version supports the following crystal systems: Cubic (point groups 432, 4̄3m, m3̄m), Hexagonal (6mm, 622, 6̄2m, 6∕mmm), Trigonal (32, 3m, 3̄m), Tetragonal (4mm, 422, 4̄2m, 4∕mmm) and Orthorhombic (222, 2mm, mmm). References: [1] S. P. Ong, W. D. Richards, A. Jain, G. Hautier, M. Kocher, S. Cholia, D. Gunter, V. L. Chevrier, K. A. Persson, and G. Ceder, Comput. Mater. Sci. 68, 314 (2013). [2] R. Wu, A. J. Freeman, Journal of Applied Physics 79, 6209–6212 (1996). [3] G. Kresse, J. Furthmüller, Phys. Rev. B 54 (1996) 11169. [4] S. Zhang and R. Zhang, Comput. Phys. Commun. 220, 403 (2017).}
+}

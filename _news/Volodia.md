@@ -23,4 +23,13 @@ Mn$$_2$$Au is a metallic collinear antiferromagnet with body central tetragonal 
 </div>
 
 
-If the $$ \Delta E $$ is positive, it means that the structure with magnetic moments parallel to the strain has lower energy and thus is more favourable. If the value is negative, then the orientation of magnetic moments perpendicular to the strain is preferred.
+If the $$ \Delta E $$ is positive, it means that the structure with magnetic moments parallel to the strain has lower energy and thus is more favourable. If the value is negative, then the orientation of magnetic moments perpendicular to the strain is preferred. As can be seen from the plot below, $$\Delta E$$ is negative for the positive values of strain along $$[110]$$ direction $$\varepsilon _{110}$$. This means that the tensile strain favours perpendicular orientation of magnetic moments. By making a linear fit of this results we obtain the magneto elastic constant of $$ B_{me}$$ = -0.92 meV per formula unit (one unit cell). This value means that one percent of strain results in 9.2 $$\mu$$eV of magnetic anisotropy per formula unit between easy directions $$\langle 110 \rangle$$. 
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/smaller_strain_magnetostriction_pages.png' | relative_url }}" alt="" title="Magneto-elastic coupling constant estimation results"/>
+    </div>
+</div>
+<div class="caption">
+    Magneto-elastic coupling constant estimation results.
+</div>

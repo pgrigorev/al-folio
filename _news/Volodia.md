@@ -3,7 +3,7 @@ layout: distill
 date: 2022-11-21 10:00:00-0300
 title: "Extremely proud to be a part of an amazing achievement of my brother Volodia! :trophy:"
 inline: False
-description: Optically Triggered Néel Vector Manipulation of a Metallic Antiferromagnet Mn2Au under Strain
+description: 
 
 keywords: Gold, Irradiation, Lasers, Magnetic properties, Transition metals, Density Functional Theory, Grigorev, ACS Nano, Antiferromagnet
 

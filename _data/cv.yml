@@ -82,6 +82,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2023
+      institution:
+        - <a href="https://c3n-cn.fr/admissibilite-2023#S09">Ranked third in the CNRS researchers competition for section 09
     - year: 2020
       institution:
         - Warwick Faculty of Science, Engineering and Medicine Post-doctoral Research Prize

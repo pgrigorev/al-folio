@@ -37,3 +37,18 @@ On top of that, thanks to the efforts of [Thomas Rocke](https://github.com/thoma
     seamless="seamless"
     frameborder="0">
 </iframe>
+
+<br> 
+Update on November 24, 2023: [Thomas Rocke](https://github.com/thomas-rocke) also added `matscipy.gamma_surface` module for generating gamma surfaces and stacking faults. An example of a structure generated with the module is shown below. See the [Generating Gamma Surfaces & Stacking Faults](https://libatoms.github.io/matscipy/applications/gamma_surfaces.html#generating-gamma-surfaces-stacking-faults) documentation page for more details as well as [a tutorial explaining how these defects are related to dislocations](https://libatoms.github.io/matscipy/applications/gamma_surface_advanced.html#advanced-features-of-gamma-surface-py). 
+
+<div style="display: flex; justify-content: center;">
+    <iframe src="/assets/html/Gamma_surface.html"
+        style="display: flex; margin: auto;" 
+        width="450"
+        height="410"
+        seamless="seamless"
+        frameborder="0">
+    </iframe>
+</div>
+
+Thanks to [Lei Zhang](https://github.com/leiapple) and [Lakshmi Shenoy](https://github.com/lakshenoy) `matscipy.dislocation` now has built in anisotropic elasticity theory implementation to calculate displacement fields and deformation gradients. This opens the door to reducing the number of external dependencies of the module in the future.

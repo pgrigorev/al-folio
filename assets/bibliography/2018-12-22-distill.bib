@@ -320,3 +320,18 @@ abstract = {In this work, we present the program MAELAS to calculate magnetocrys
 Program summary
 Program Title: MAELAS CPC Library link to program files: https://doi.org/10.17632/gxcdg3z7t6.1 Developer’s repository link: https://github.com/pnieves2019/MAELAS Code Ocean capsule: https://codeocean.com/capsule/0361425 Licensing provisions: BSD 3-clause Programming language: Python3 Nature of problem: To calculate anisotropic magnetostrictive coefficients and magnetoelastic constants in an automated way based on Density Functional Theory methods. Solution method: In the first stage, the unit cell is relaxed through a spin-polarized calculation without spin-orbit coupling. Next, after a crystal symmetry analysis, a set of deformed lattice and spin configurations are generated using the pymatgen library [1]. The energy of these states is calculated by the first-principles code VASP [3], including the spin-orbit coupling. The anisotropic magnetostrictive coefficients are derived from the fitting of these energies to a quadratic polynomial [2]. Finally, if the elastic tensor is provided [4], then the magnetoelastic constants are also calculated. Additional comments including restrictions and unusual features: This version supports the following crystal systems: Cubic (point groups 432, 4̄3m, m3̄m), Hexagonal (6mm, 622, 6̄2m, 6∕mmm), Trigonal (32, 3m, 3̄m), Tetragonal (4mm, 422, 4̄2m, 4∕mmm) and Orthorhombic (222, 2mm, mmm). References: [1] S. P. Ong, W. D. Richards, A. Jain, G. Hautier, M. Kocher, S. Cholia, D. Gunter, V. L. Chevrier, K. A. Persson, and G. Ceder, Comput. Mater. Sci. 68, 314 (2013). [2] R. Wu, A. J. Freeman, Journal of Applied Physics 79, 6209–6212 (1996). [3] G. Kresse, J. Furthmüller, Phys. Rev. B 54 (1996) 11169. [4] S. Zhang and R. Zhang, Comput. Phys. Commun. 220, 403 (2017).}
 }
+
+@article{Allera2024,
+   abstract = {Accurate structural analysis is essential to gain physical knowledge and understanding of atomic-scale processes in materials from atomistic simulations. However, traditional analysis methods often reach their limits when applied to crystalline systems with thermal fluctuations, defect-induced distortions, partial vitrification, etc. In order to enhance the means of structural analysis, we present a novel descriptor for encoding atomic environments into 2D images, based on a pixelated representation of graph-like architecture with weighted edge connections of neighboring atoms. This descriptor is well adapted for Convolutional Neural Networks and enables accurate structural analysis at a low computational cost. In this paper, we showcase a series of applications, including the classification of crystalline structures in distorted systems, tracking phase transformations up to the melting temperature, and analyzing liquid-to-amorphous transitions in pure metals and alloys. This work provides the foundation for robust and efficient structural analysis in materials science, opening up new possibilities for studying complex structural processes, which cannot be described with traditional approaches.},
+   author = {Arnaud Allera and Alexandra M. Goryaeva and Paul Lafourcade and Jean Bernard Maillet and Mihai Cosmin Marinica},
+   doi = {10.1016/J.COMMATSCI.2023.112535},
+   issn = {0927-0256},
+   journal = {Computational Materials Science},
+   keywords = {Amorphous state,Crystalline structure,Deep learning,Descriptor,Molecular dynamics,Structural analysis},
+   month = {1},
+   pages = {112535},
+   publisher = {Elsevier},
+   title = {Neighbors Map: An efficient atomic descriptor for structural analysis},
+   volume = {231},
+   year = {2024},
+}

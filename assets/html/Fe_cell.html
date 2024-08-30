@@ -1,0 +1,2800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nglview-demo</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "fa006d14a066420d8e74e92ccb35a642": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "6bf53679c08b42b994b65115e6a88f9d": {
+      "model_name": "ColormakerRegistryModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "3.0.8",
+      "state": {
+        "_dom_classes": [],
+        "_msg_ar": [],
+        "_msg_q": [],
+        "layout": "IPY_MODEL_fa006d14a066420d8e74e92ccb35a642"
+      }
+    },
+    "a0f3c2d83482431497ce9260223642c1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "height": "300px",
+        "width": "100%"
+      }
+    },
+    "df928638ef1849668a9a8f7459895056": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "3.0.8",
+      "state": {
+        "_camera_orientation": [
+          0.2,
+          0,
+          0,
+          0,
+          0,
+          0.2,
+          0,
+          0,
+          0,
+          0,
+          0.2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_8bd01503ed654a70a92edf0ac4a7dc47",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_15933ebe39ff47899371595b1b435298",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 0,
+          "clipMode": "scene",
+          "clipScale": "relative",
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "orthographic",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "CRYST1    3.350    3.350    3.350  90.00  90.00  90.00 P 1\nMODEL     1\nATOM      1   Po MOL     1       0.000   0.000   0.000  1.00  0.00          PO  \nENDMDL\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": false,
+              "name": "Simple Cubic",
+              "ext": "pdb"
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "updateRepresentationsByName",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill",
+              0
+            ],
+            "kwargs": {
+              "radiusType": "covalent",
+              "radiusScale": 0.5
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "unitcell"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [],
+            "kwargs": {
+              "cameraType": "orthographic"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "clipDist": 0
+              }
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "100%",
+              ""
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "",
+              "300px"
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "executeCode",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "\n                this.stage.mouseControls.add('hoverPick', (stage, pickingProxy) => {\n                    let tooltip = this.stage.tooltip;\n                    if(pickingProxy && pickingProxy.atom && !pickingProxy.bond){\n                        let atom = pickingProxy.atom;\n                        if (atom.structure.name.length > 0){\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index + \": \" + atom.structure.name;\n                        } else {\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index;\n                        }\n                    } else if (pickingProxy && pickingProxy.bond){\n                        let bond = pickingProxy.bond;\n                        if (bond.structure.name.length > 0){\n                        tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond: \" + bond.structure.name;\n                        } else {\n                            tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond\";\n                        }\n                    } else if (pickingProxy && pickingProxy.unitcell){\n                        tooltip.innerText = \"Unit cell\";\n                    } else if (pickingProxy && pickingProxy.distance){\n                        let distance = pickingProxy.distance;\n                        tooltip.innerText = \"Distance: \" + distance.atom1.atomname + distance.atom1.index + \"-\" + distance.atom2.atomname + distance.atom2.index;\n                    } \n                });\n                "
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "clipMode": "scene",
+          "clipScale": "relative",
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "spacefill",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "medium",
+                "sphereDetail": 1,
+                "disableImpostor": false,
+                "radiusType": "covalent",
+                "radiusData": {},
+                "radiusSize": 1,
+                "radiusScale": 0.5,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": "all"
+              }
+            },
+            "1": {
+              "type": "unitcell",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "medium",
+                "radiusSize": 0.01674999926474008,
+                "sphereDetail": 1,
+                "radialSegments": 10,
+                "disableImpostor": false,
+                "radiusType": "vdw",
+                "radiusData": {},
+                "radiusScale": 1,
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": "orange",
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": "all"
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.39",
+        "_ngl_view_id": [
+          "66DF5CCF-A58D-4E59-A67C-4EE2FEE9EAF2"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_a0f3c2d83482431497ce9260223642c1",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "31ea189f94664b60bca41beba7c0b1a6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "6cbcfd046c55483fad8670c130ca9a32": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_31ea189f94664b60bca41beba7c0b1a6",
+        "width": "900.0"
+      }
+    },
+    "03864f9bb81f44c8a47999546a957c52": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "b0f5fa4f979f4f5ca19eeabde266472b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "91723b74a23e4d519ac78501c9ddf5fd": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_03864f9bb81f44c8a47999546a957c52",
+        "max": 0,
+        "style": "IPY_MODEL_b0f5fa4f979f4f5ca19eeabde266472b"
+      }
+    },
+    "9fd8b5ae3dc54c6fbfb7803c209705ee": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "2f93af05483844eb9106c801bd6f387a": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "96b3e6646bd6444abd9893aaa3303171": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_9fd8b5ae3dc54c6fbfb7803c209705ee",
+        "max": 0,
+        "style": "IPY_MODEL_2f93af05483844eb9106c801bd6f387a"
+      }
+    },
+    "9426e206c0614a49b3888cdd9aba5710": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "15933ebe39ff47899371595b1b435298": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_91723b74a23e4d519ac78501c9ddf5fd",
+          "IPY_MODEL_96b3e6646bd6444abd9893aaa3303171"
+        ],
+        "layout": "IPY_MODEL_9426e206c0614a49b3888cdd9aba5710"
+      }
+    },
+    "3b1aa421e22c472b95f5b2788764ce63": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_91723b74a23e4d519ac78501c9ddf5fd",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_96b3e6646bd6444abd9893aaa3303171",
+          "value"
+        ]
+      }
+    },
+    "7d8addbfd2a14ea7a9e15b8a08a87bc8": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_91723b74a23e4d519ac78501c9ddf5fd",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_df928638ef1849668a9a8f7459895056",
+          "frame"
+        ]
+      }
+    },
+    "ebb217c6ecb74e4290412a6036a2f40c": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_91723b74a23e4d519ac78501c9ddf5fd",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_df928638ef1849668a9a8f7459895056",
+          "max_frame"
+        ]
+      }
+    },
+    "955f8ba6c1cf4af499042e037b3b8838": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_96b3e6646bd6444abd9893aaa3303171",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_df928638ef1849668a9a8f7459895056",
+          "max_frame"
+        ]
+      }
+    },
+    "d94f947d2a8242db858b885f7c5b227d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "aa87f63812a845ffafdf203ff73c4eef": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "8bd01503ed654a70a92edf0ac4a7dc47": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_d94f947d2a8242db858b885f7c5b227d",
+        "style": "IPY_MODEL_aa87f63812a845ffafdf203ff73c4eef"
+      }
+    },
+    "23f37251b14346b1bb9ceaefe19ffe81": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "height": "300px",
+        "width": "100%"
+      }
+    },
+    "aeadf7adf8574b39847209027c6bcfef": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "3.0.8",
+      "state": {
+        "_camera_orientation": [
+          3.849760417253549,
+          0,
+          0,
+          0,
+          0,
+          3.849760417253549,
+          0,
+          0,
+          0,
+          0,
+          3.849760417253549,
+          0,
+          -0.7174999713897705,
+          -0.7174999713897705,
+          -0.7174999713897705,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_7baa77eade9d45f78253e746990d6fb8",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_33e4dbb64a1b49e69f99dff63399c579",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 0,
+          "clipMode": "scene",
+          "clipScale": "relative",
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "orthographic",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "CRYST1    2.870    2.870    2.870  90.00  90.00  90.00 P 1\nMODEL     1\nATOM      1   Fe MOL     1       0.000   0.000   0.000  1.00  0.00          FE  \nATOM      2   Fe MOL     1       1.435   1.435   1.435  1.00  0.00          FE  \nENDMDL\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": false,
+              "name": "BCC",
+              "ext": "pdb"
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "updateRepresentationsByName",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill",
+              0
+            ],
+            "kwargs": {
+              "radiusType": "covalent",
+              "radiusScale": 0.5
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "unitcell"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [],
+            "kwargs": {
+              "cameraType": "orthographic"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "clipDist": 0
+              }
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "100%",
+              ""
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "",
+              "300px"
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "executeCode",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "\n                this.stage.mouseControls.add('hoverPick', (stage, pickingProxy) => {\n                    let tooltip = this.stage.tooltip;\n                    if(pickingProxy && pickingProxy.atom && !pickingProxy.bond){\n                        let atom = pickingProxy.atom;\n                        if (atom.structure.name.length > 0){\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index + \": \" + atom.structure.name;\n                        } else {\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index;\n                        }\n                    } else if (pickingProxy && pickingProxy.bond){\n                        let bond = pickingProxy.bond;\n                        if (bond.structure.name.length > 0){\n                        tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond: \" + bond.structure.name;\n                        } else {\n                            tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond\";\n                        }\n                    } else if (pickingProxy && pickingProxy.unitcell){\n                        tooltip.innerText = \"Unit cell\";\n                    } else if (pickingProxy && pickingProxy.distance){\n                        let distance = pickingProxy.distance;\n                        tooltip.innerText = \"Distance: \" + distance.atom1.atomname + distance.atom1.index + \"-\" + distance.atom2.atomname + distance.atom2.index;\n                    } \n                });\n                "
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "clipMode": "scene",
+          "clipScale": "relative",
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "spacefill",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "medium",
+                "sphereDetail": 1,
+                "disableImpostor": false,
+                "radiusType": "covalent",
+                "radiusData": {},
+                "radiusSize": 1,
+                "radiusScale": 0.5,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": "all"
+              }
+            },
+            "1": {
+              "type": "unitcell",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "medium",
+                "radiusSize": 0.014349999370090754,
+                "sphereDetail": 1,
+                "radialSegments": 10,
+                "disableImpostor": false,
+                "radiusType": "vdw",
+                "radiusData": {},
+                "radiusScale": 1,
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": "orange",
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": "all"
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.39",
+        "_ngl_view_id": [
+          "983707FE-A8B8-4A68-BBB9-8885A6E9952A"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_23f37251b14346b1bb9ceaefe19ffe81",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "72a389973458441eaf417be63b7c6696": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "4d1163a59d05497d83ad535ff289e733": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_72a389973458441eaf417be63b7c6696",
+        "width": "900.0"
+      }
+    },
+    "34f3021f185a40418b719ae3ca07b311": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "c35b550fd60d45af9870d970aaa147b9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "eecd627f1f8842f484c94506d3513a4b": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_34f3021f185a40418b719ae3ca07b311",
+        "max": 0,
+        "style": "IPY_MODEL_c35b550fd60d45af9870d970aaa147b9"
+      }
+    },
+    "12c175ec78134caa902ddf82b32a011f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "93d5de1537b04ace83aeaaf5928b4359": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "2ff74a2c290a4647b276adeb9c1ec238": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_12c175ec78134caa902ddf82b32a011f",
+        "max": 0,
+        "style": "IPY_MODEL_93d5de1537b04ace83aeaaf5928b4359"
+      }
+    },
+    "b16943932f2341fbb77d328c49afab2f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "33e4dbb64a1b49e69f99dff63399c579": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_eecd627f1f8842f484c94506d3513a4b",
+          "IPY_MODEL_2ff74a2c290a4647b276adeb9c1ec238"
+        ],
+        "layout": "IPY_MODEL_b16943932f2341fbb77d328c49afab2f"
+      }
+    },
+    "65a22c383e30471b8891c6792bffd0db": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_eecd627f1f8842f484c94506d3513a4b",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_2ff74a2c290a4647b276adeb9c1ec238",
+          "value"
+        ]
+      }
+    },
+    "cc7997d8c2984677be5cf83c4fca3061": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_eecd627f1f8842f484c94506d3513a4b",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_aeadf7adf8574b39847209027c6bcfef",
+          "frame"
+        ]
+      }
+    },
+    "6089cf0d32f84d0b8b56f6fc05d75b9e": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_eecd627f1f8842f484c94506d3513a4b",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_aeadf7adf8574b39847209027c6bcfef",
+          "max_frame"
+        ]
+      }
+    },
+    "b0abe70d26e94246b45cf18d5ac776e1": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_2ff74a2c290a4647b276adeb9c1ec238",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_aeadf7adf8574b39847209027c6bcfef",
+          "max_frame"
+        ]
+      }
+    },
+    "24c4e4e102e448248078cf2b28c39fc1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "93adfc7a8e624778bd7af221a08a1a4d": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "7baa77eade9d45f78253e746990d6fb8": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_24c4e4e102e448248078cf2b28c39fc1",
+        "style": "IPY_MODEL_93adfc7a8e624778bd7af221a08a1a4d"
+      }
+    },
+    "661b531ee1404f3e95099219423194a2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "height": "300px",
+        "width": "100%"
+      }
+    },
+    "86b0925a174e4bacb4b191f4a341f50a": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "3.0.8",
+      "state": {
+        "_camera_orientation": [
+          22.204112759831634,
+          0,
+          0,
+          0,
+          0,
+          22.204112759831634,
+          0,
+          0,
+          0,
+          0,
+          22.204112759831634,
+          0,
+          -5.022500038146973,
+          -5.022500038146973,
+          -5.022500038146973,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_7f34ef2339914ed194e5f95906d97f1c",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_2054cf69025b42c78435846ef4da9db5",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 0,
+          "clipMode": "scene",
+          "clipScale": "relative",
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "orthographic",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "CRYST1   11.480   11.480   11.480  90.00  90.00  90.00 P 1\nMODEL     1\nATOM      1   Fe MOL     1       0.000   0.000   0.000  1.00  0.00          FE  \nATOM      2   Fe MOL     1       1.435   1.435   1.435  1.00  0.00          FE  \nATOM      3   Fe MOL     1       0.000   0.000   2.870  1.00  0.00          FE  \nATOM      4   Fe MOL     1       1.435   1.435   4.305  1.00  0.00          FE  \nATOM      5   Fe MOL     1       0.000   0.000   5.740  1.00  0.00          FE  \nATOM      6   Fe MOL     1       1.435   1.435   7.175  1.00  0.00          FE  \nATOM      7   Fe MOL     1       0.000   0.000   8.610  1.00  0.00          FE  \nATOM      8   Fe MOL     1       1.435   1.435  10.045  1.00  0.00          FE  \nATOM      9   Fe MOL     1       0.000   2.870   0.000  1.00  0.00          FE  \nATOM     10   Fe MOL     1       1.435   4.305   1.435  1.00  0.00          FE  \nATOM     11   Fe MOL     1       0.000   2.870   2.870  1.00  0.00          FE  \nATOM     12   Fe MOL     1       1.435   4.305   4.305  1.00  0.00          FE  \nATOM     13   Fe MOL     1       0.000   2.870   5.740  1.00  0.00          FE  \nATOM     14   Fe MOL     1       1.435   4.305   7.175  1.00  0.00          FE  \nATOM     15   Fe MOL     1       0.000   2.870   8.610  1.00  0.00          FE  \nATOM     16   Fe MOL     1       1.435   4.305  10.045  1.00  0.00          FE  \nATOM     17   Fe MOL     1       0.000   5.740   0.000  1.00  0.00          FE  \nATOM     18   Fe MOL     1       1.435   7.175   1.435  1.00  0.00          FE  \nATOM     19   Fe MOL     1       0.000   5.740   2.870  1.00  0.00          FE  \nATOM     20   Fe MOL     1       1.435   7.175   4.305  1.00  0.00          FE  \nATOM     21   Fe MOL     1       0.000   5.740   5.740  1.00  0.00          FE  \nATOM     22   Fe MOL     1       1.435   7.175   7.175  1.00  0.00          FE  \nATOM     23   Fe MOL     1       0.000   5.740   8.610  1.00  0.00          FE  \nATOM     24   Fe MOL     1       1.435   7.175  10.045  1.00  0.00          FE  \nATOM     25   Fe MOL     1       0.000   8.610   0.000  1.00  0.00          FE  \nATOM     26   Fe MOL     1       1.435  10.045   1.435  1.00  0.00          FE  \nATOM     27   Fe MOL     1       0.000   8.610   2.870  1.00  0.00          FE  \nATOM     28   Fe MOL     1       1.435  10.045   4.305  1.00  0.00          FE  \nATOM     29   Fe MOL     1       0.000   8.610   5.740  1.00  0.00          FE  \nATOM     30   Fe MOL     1       1.435  10.045   7.175  1.00  0.00          FE  \nATOM     31   Fe MOL     1       0.000   8.610   8.610  1.00  0.00          FE  \nATOM     32   Fe MOL     1       1.435  10.045  10.045  1.00  0.00          FE  \nATOM     33   Fe MOL     1       2.870   0.000   0.000  1.00  0.00          FE  \nATOM     34   Fe MOL     1       4.305   1.435   1.435  1.00  0.00          FE  \nATOM     35   Fe MOL     1       2.870   0.000   2.870  1.00  0.00          FE  \nATOM     36   Fe MOL     1       4.305   1.435   4.305  1.00  0.00          FE  \nATOM     37   Fe MOL     1       2.870   0.000   5.740  1.00  0.00          FE  \nATOM     38   Fe MOL     1       4.305   1.435   7.175  1.00  0.00          FE  \nATOM     39   Fe MOL     1       2.870   0.000   8.610  1.00  0.00          FE  \nATOM     40   Fe MOL     1       4.305   1.435  10.045  1.00  0.00          FE  \nATOM     41   Fe MOL     1       2.870   2.870   0.000  1.00  0.00          FE  \nATOM     42   Fe MOL     1       4.305   4.305   1.435  1.00  0.00          FE  \nATOM     43   Fe MOL     1       2.870   2.870   2.870  1.00  0.00          FE  \nATOM     44   Fe MOL     1       4.305   4.305   4.305  1.00  0.00          FE  \nATOM     45   Fe MOL     1       2.870   2.870   5.740  1.00  0.00          FE  \nATOM     46   Fe MOL     1       4.305   4.305   7.175  1.00  0.00          FE  \nATOM     47   Fe MOL     1       2.870   2.870   8.610  1.00  0.00          FE  \nATOM     48   Fe MOL     1       4.305   4.305  10.045  1.00  0.00          FE  \nATOM     49   Fe MOL     1       2.870   5.740   0.000  1.00  0.00          FE  \nATOM     50   Fe MOL     1       4.305   7.175   1.435  1.00  0.00          FE  \nATOM     51   Fe MOL     1       2.870   5.740   2.870  1.00  0.00          FE  \nATOM     52   Fe MOL     1       4.305   7.175   4.305  1.00  0.00          FE  \nATOM     53   Fe MOL     1       2.870   5.740   5.740  1.00  0.00          FE  \nATOM     54   Fe MOL     1       4.305   7.175   7.175  1.00  0.00          FE  \nATOM     55   Fe MOL     1       2.870   5.740   8.610  1.00  0.00          FE  \nATOM     56   Fe MOL     1       4.305   7.175  10.045  1.00  0.00          FE  \nATOM     57   Fe MOL     1       2.870   8.610   0.000  1.00  0.00          FE  \nATOM     58   Fe MOL     1       4.305  10.045   1.435  1.00  0.00          FE  \nATOM     59   Fe MOL     1       2.870   8.610   2.870  1.00  0.00          FE  \nATOM     60   Fe MOL     1       4.305  10.045   4.305  1.00  0.00          FE  \nATOM     61   Fe MOL     1       2.870   8.610   5.740  1.00  0.00          FE  \nATOM     62   Fe MOL     1       4.305  10.045   7.175  1.00  0.00          FE  \nATOM     63   Fe MOL     1       2.870   8.610   8.610  1.00  0.00          FE  \nATOM     64   Fe MOL     1       4.305  10.045  10.045  1.00  0.00          FE  \nATOM     65   Fe MOL     1       5.740   0.000   0.000  1.00  0.00          FE  \nATOM     66   Fe MOL     1       7.175   1.435   1.435  1.00  0.00          FE  \nATOM     67   Fe MOL     1       5.740   0.000   2.870  1.00  0.00          FE  \nATOM     68   Fe MOL     1       7.175   1.435   4.305  1.00  0.00          FE  \nATOM     69   Fe MOL     1       5.740   0.000   5.740  1.00  0.00          FE  \nATOM     70   Fe MOL     1       7.175   1.435   7.175  1.00  0.00          FE  \nATOM     71   Fe MOL     1       5.740   0.000   8.610  1.00  0.00          FE  \nATOM     72   Fe MOL     1       7.175   1.435  10.045  1.00  0.00          FE  \nATOM     73   Fe MOL     1       5.740   2.870   0.000  1.00  0.00          FE  \nATOM     74   Fe MOL     1       7.175   4.305   1.435  1.00  0.00          FE  \nATOM     75   Fe MOL     1       5.740   2.870   2.870  1.00  0.00          FE  \nATOM     76   Fe MOL     1       7.175   4.305   4.305  1.00  0.00          FE  \nATOM     77   Fe MOL     1       5.740   2.870   5.740  1.00  0.00          FE  \nATOM     78   Fe MOL     1       7.175   4.305   7.175  1.00  0.00          FE  \nATOM     79   Fe MOL     1       5.740   2.870   8.610  1.00  0.00          FE  \nATOM     80   Fe MOL     1       7.175   4.305  10.045  1.00  0.00          FE  \nATOM     81   Fe MOL     1       5.740   5.740   0.000  1.00  0.00          FE  \nATOM     82   Fe MOL     1       7.175   7.175   1.435  1.00  0.00          FE  \nATOM     83   Fe MOL     1       5.740   5.740   2.870  1.00  0.00          FE  \nATOM     84   Fe MOL     1       7.175   7.175   4.305  1.00  0.00          FE  \nATOM     85   Fe MOL     1       5.740   5.740   5.740  1.00  0.00          FE  \nATOM     86   Fe MOL     1       7.175   7.175   7.175  1.00  0.00          FE  \nATOM     87   Fe MOL     1       5.740   5.740   8.610  1.00  0.00          FE  \nATOM     88   Fe MOL     1       7.175   7.175  10.045  1.00  0.00          FE  \nATOM     89   Fe MOL     1       5.740   8.610   0.000  1.00  0.00          FE  \nATOM     90   Fe MOL     1       7.175  10.045   1.435  1.00  0.00          FE  \nATOM     91   Fe MOL     1       5.740   8.610   2.870  1.00  0.00          FE  \nATOM     92   Fe MOL     1       7.175  10.045   4.305  1.00  0.00          FE  \nATOM     93   Fe MOL     1       5.740   8.610   5.740  1.00  0.00          FE  \nATOM     94   Fe MOL     1       7.175  10.045   7.175  1.00  0.00          FE  \nATOM     95   Fe MOL     1       5.740   8.610   8.610  1.00  0.00          FE  \nATOM     96   Fe MOL     1       7.175  10.045  10.045  1.00  0.00          FE  \nATOM     97   Fe MOL     1       8.610   0.000   0.000  1.00  0.00          FE  \nATOM     98   Fe MOL     1      10.045   1.435   1.435  1.00  0.00          FE  \nATOM     99   Fe MOL     1       8.610   0.000   2.870  1.00  0.00          FE  \nATOM    100   Fe MOL     1      10.045   1.435   4.305  1.00  0.00          FE  \nATOM    101   Fe MOL     1       8.610   0.000   5.740  1.00  0.00          FE  \nATOM    102   Fe MOL     1      10.045   1.435   7.175  1.00  0.00          FE  \nATOM    103   Fe MOL     1       8.610   0.000   8.610  1.00  0.00          FE  \nATOM    104   Fe MOL     1      10.045   1.435  10.045  1.00  0.00          FE  \nATOM    105   Fe MOL     1       8.610   2.870   0.000  1.00  0.00          FE  \nATOM    106   Fe MOL     1      10.045   4.305   1.435  1.00  0.00          FE  \nATOM    107   Fe MOL     1       8.610   2.870   2.870  1.00  0.00          FE  \nATOM    108   Fe MOL     1      10.045   4.305   4.305  1.00  0.00          FE  \nATOM    109   Fe MOL     1       8.610   2.870   5.740  1.00  0.00          FE  \nATOM    110   Fe MOL     1      10.045   4.305   7.175  1.00  0.00          FE  \nATOM    111   Fe MOL     1       8.610   2.870   8.610  1.00  0.00          FE  \nATOM    112   Fe MOL     1      10.045   4.305  10.045  1.00  0.00          FE  \nATOM    113   Fe MOL     1       8.610   5.740   0.000  1.00  0.00          FE  \nATOM    114   Fe MOL     1      10.045   7.175   1.435  1.00  0.00          FE  \nATOM    115   Fe MOL     1       8.610   5.740   2.870  1.00  0.00          FE  \nATOM    116   Fe MOL     1      10.045   7.175   4.305  1.00  0.00          FE  \nATOM    117   Fe MOL     1       8.610   5.740   5.740  1.00  0.00          FE  \nATOM    118   Fe MOL     1      10.045   7.175   7.175  1.00  0.00          FE  \nATOM    119   Fe MOL     1       8.610   5.740   8.610  1.00  0.00          FE  \nATOM    120   Fe MOL     1      10.045   7.175  10.045  1.00  0.00          FE  \nATOM    121   Fe MOL     1       8.610   8.610   0.000  1.00  0.00          FE  \nATOM    122   Fe MOL     1      10.045  10.045   1.435  1.00  0.00          FE  \nATOM    123   Fe MOL     1       8.610   8.610   2.870  1.00  0.00          FE  \nATOM    124   Fe MOL     1      10.045  10.045   4.305  1.00  0.00          FE  \nATOM    125   Fe MOL     1       8.610   8.610   5.740  1.00  0.00          FE  \nATOM    126   Fe MOL     1      10.045  10.045   7.175  1.00  0.00          FE  \nATOM    127   Fe MOL     1       8.610   8.610   8.610  1.00  0.00          FE  \nATOM    128   Fe MOL     1      10.045  10.045  10.045  1.00  0.00          FE  \nENDMDL\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": false,
+              "name": "",
+              "ext": "pdb"
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "updateRepresentationsByName",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill",
+              0
+            ],
+            "kwargs": {
+              "radiusType": "covalent",
+              "radiusScale": 0.5
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "unitcell"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [],
+            "kwargs": {
+              "cameraType": "orthographic"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "clipDist": 0
+              }
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "100%",
+              ""
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "",
+              "300px"
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "executeCode",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "\n                this.stage.mouseControls.add('hoverPick', (stage, pickingProxy) => {\n                    let tooltip = this.stage.tooltip;\n                    if(pickingProxy && pickingProxy.atom && !pickingProxy.bond){\n                        let atom = pickingProxy.atom;\n                        if (atom.structure.name.length > 0){\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index + \": \" + atom.structure.name;\n                        } else {\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index;\n                        }\n                    } else if (pickingProxy && pickingProxy.bond){\n                        let bond = pickingProxy.bond;\n                        if (bond.structure.name.length > 0){\n                        tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond: \" + bond.structure.name;\n                        } else {\n                            tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond\";\n                        }\n                    } else if (pickingProxy && pickingProxy.unitcell){\n                        tooltip.innerText = \"Unit cell\";\n                    } else if (pickingProxy && pickingProxy.distance){\n                        let distance = pickingProxy.distance;\n                        tooltip.innerText = \"Distance: \" + distance.atom1.atomname + distance.atom1.index + \"-\" + distance.atom2.atomname + distance.atom2.index;\n                    } \n                });\n                "
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "clipMode": "scene",
+          "clipScale": "relative",
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "spacefill",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "medium",
+                "sphereDetail": 1,
+                "disableImpostor": false,
+                "radiusType": "covalent",
+                "radiusData": {},
+                "radiusSize": 1,
+                "radiusScale": 0.5,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": "all"
+              }
+            },
+            "1": {
+              "type": "unitcell",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "medium",
+                "radiusSize": 0.057399997480363014,
+                "sphereDetail": 1,
+                "radialSegments": 10,
+                "disableImpostor": false,
+                "radiusType": "vdw",
+                "radiusData": {},
+                "radiusScale": 1,
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": "orange",
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": "all"
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.39",
+        "_ngl_view_id": [
+          "7A337F73-BA74-484B-A8B7-82B27330FA79"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_661b531ee1404f3e95099219423194a2",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "ee07e77df9c24521a2062a39375861c5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "d0235f0ef0064727a48b1054ff5f3722": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_ee07e77df9c24521a2062a39375861c5",
+        "width": "900.0"
+      }
+    },
+    "69dd2d1b61d74eba9bff8eaccc0bf1ea": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "cfff7eda6b924d7bac70bdb9f2c6966c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "45c5c7924fcb4007b9f3b82ec3db49cd": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_69dd2d1b61d74eba9bff8eaccc0bf1ea",
+        "max": 0,
+        "style": "IPY_MODEL_cfff7eda6b924d7bac70bdb9f2c6966c"
+      }
+    },
+    "8892a99e55924decb00c862811fb5ebf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "afd6974ebe494625abdba47a4027d876": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "4ce4868496694f08bbd570190a4aaf7a": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_8892a99e55924decb00c862811fb5ebf",
+        "max": 0,
+        "style": "IPY_MODEL_afd6974ebe494625abdba47a4027d876"
+      }
+    },
+    "1ff6bf0c441647ca82b271a6bb1d4778": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "2054cf69025b42c78435846ef4da9db5": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_45c5c7924fcb4007b9f3b82ec3db49cd",
+          "IPY_MODEL_4ce4868496694f08bbd570190a4aaf7a"
+        ],
+        "layout": "IPY_MODEL_1ff6bf0c441647ca82b271a6bb1d4778"
+      }
+    },
+    "0bdabe9908e44e6b8aa5e605ced13489": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_45c5c7924fcb4007b9f3b82ec3db49cd",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_4ce4868496694f08bbd570190a4aaf7a",
+          "value"
+        ]
+      }
+    },
+    "f506a1dbc14846dea920e52bb09a6ffa": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_45c5c7924fcb4007b9f3b82ec3db49cd",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_86b0925a174e4bacb4b191f4a341f50a",
+          "frame"
+        ]
+      }
+    },
+    "a852959cec5e43f5a95da972865644ab": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_45c5c7924fcb4007b9f3b82ec3db49cd",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_86b0925a174e4bacb4b191f4a341f50a",
+          "max_frame"
+        ]
+      }
+    },
+    "fc3f3083668d42daad05cb40026f9a9b": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_4ce4868496694f08bbd570190a4aaf7a",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_86b0925a174e4bacb4b191f4a341f50a",
+          "max_frame"
+        ]
+      }
+    },
+    "4f67bc49417249619f264cdbcbd74bef": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "7c6f1cf815c540818b204cd6762f512e": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "7f34ef2339914ed194e5f95906d97f1c": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_4f67bc49417249619f264cdbcbd74bef",
+        "style": "IPY_MODEL_7c6f1cf815c540818b204cd6762f512e"
+      }
+    },
+    "7b58fbd9c0044b5dab8bf29f6c3910da": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "height": "300px",
+        "width": "100%"
+      }
+    },
+    "0ee4cf7bf0ea418aa5fb7571db91f9f2": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "3.0.8",
+      "state": {
+        "_camera_orientation": [],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_8203cc382f594972b904b353275eb609",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_bb70c2b0ea5b4e6e8ffe2bc0fa9e8784",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {},
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "CRYST1    2.870    2.870    2.870  90.00  90.00  90.00 P 1\nMODEL     1\nATOM      1   Fe MOL     1       0.000   0.000   0.000  1.00  0.00          FE  \nATOM      2   Fe MOL     1       1.435   1.435   1.435  1.00  0.00          FE  \nATOM      3   Fe MOL     1       2.870   0.000   0.000  1.00  0.00          FE  \nATOM      4   Fe MOL     1       0.000   2.870   0.000  1.00  0.00          FE  \nATOM      5   Fe MOL     1       2.870   2.870   0.000  1.00  0.00          FE  \nATOM      6   Fe MOL     1       0.000   0.000   2.870  1.00  0.00          FE  \nATOM      7   Fe MOL     1       2.870   0.000   2.870  1.00  0.00          FE  \nATOM      8   Fe MOL     1       2.870   2.870   2.870  1.00  0.00          FE  \nATOM      9   Fe MOL     1       0.000   2.870   2.870  1.00  0.00          FE  \nENDMDL\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": false,
+              "name": "",
+              "ext": "pdb"
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "updateRepresentationsByName",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill",
+              0
+            ],
+            "kwargs": {
+              "radiusType": "covalent",
+              "radiusScale": 0.5
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "unitcell"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [],
+            "kwargs": {
+              "cameraType": "orthographic"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "clipDist": 0
+              }
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "100%",
+              ""
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "",
+              "300px"
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "executeCode",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "\n                this.stage.mouseControls.add('hoverPick', (stage, pickingProxy) => {\n                    let tooltip = this.stage.tooltip;\n                    if(pickingProxy && pickingProxy.atom && !pickingProxy.bond){\n                        let atom = pickingProxy.atom;\n                        if (atom.structure.name.length > 0){\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index + \": \" + atom.structure.name;\n                        } else {\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index;\n                        }\n                    } else if (pickingProxy && pickingProxy.bond){\n                        let bond = pickingProxy.bond;\n                        if (bond.structure.name.length > 0){\n                        tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond: \" + bond.structure.name;\n                        } else {\n                            tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond\";\n                        }\n                    } else if (pickingProxy && pickingProxy.unitcell){\n                        tooltip.innerText = \"Unit cell\";\n                    } else if (pickingProxy && pickingProxy.distance){\n                        let distance = pickingProxy.distance;\n                        tooltip.innerText = \"Distance: \" + distance.atom1.atomname + distance.atom1.index + \"-\" + distance.atom2.atomname + distance.atom2.index;\n                    } \n                });\n                "
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "viewerControls",
+            "type": "call_method",
+            "methodName": "center",
+            "reconstruc_color_scheme": false,
+            "args": [
+              [
+                1.43,
+                1.43,
+                1.43
+              ]
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "viewerControls",
+            "type": "call_method",
+            "methodName": "zoom",
+            "reconstruc_color_scheme": false,
+            "args": [
+              1.09
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "viewerControls",
+            "type": "call_method",
+            "methodName": "center",
+            "reconstruc_color_scheme": false,
+            "args": [
+              [
+                1.43,
+                1.43,
+                1.43
+              ]
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "cylinder",
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.435,
+                    1.435,
+                    1.435
+                  ],
+                  [
+                    1.0,
+                    0.8901960784313725,
+                    0.26666666666666666
+                  ],
+                  [
+                    0.1
+                  ],
+                  "Distance Fe0-Fe1: 2.49 \u00c5"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "text",
+                  [
+                    0.7175,
+                    0.7175,
+                    0.7175
+                  ],
+                  [
+                    1.0,
+                    0.8901960784313725,
+                    0.26666666666666666
+                  ],
+                  0.75,
+                  "2.49 A"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "cylinder",
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    2.87,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.22745098039215686,
+                    0.7647058823529411,
+                    0.4235294117647059
+                  ],
+                  [
+                    0.1
+                  ],
+                  "Distance Fe0-Fe2: 2.87 \u00c5"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "text",
+                  [
+                    1.735,
+                    0.1,
+                    0.0
+                  ],
+                  [
+                    0.22745098039215686,
+                    0.7647058823529411,
+                    0.4235294117647059
+                  ],
+                  0.75,
+                  "2.87 A"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "cylinder",
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    2.87,
+                    2.87
+                  ],
+                  [
+                    0.20392156862745098,
+                    0.3058823529411765,
+                    0.5294117647058824
+                  ],
+                  [
+                    0.1
+                  ],
+                  "Distance Fe0-Fe8: 4.06 \u00c5"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "text",
+                  [
+                    -0.2,
+                    1.435,
+                    1.435
+                  ],
+                  [
+                    0.20392156862745098,
+                    0.3058823529411765,
+                    0.5294117647058824
+                  ],
+                  0.75,
+                  "4.06 A"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "cylinder",
+                  [
+                    2.87,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    2.87,
+                    2.87
+                  ],
+                  [
+                    0.27450980392156865,
+                    0.0392156862745098,
+                    0.3215686274509804
+                  ],
+                  [
+                    0.1
+                  ],
+                  "Distance Fe2-Fe8: 4.97 \u00c5"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "text",
+                  [
+                    1.835,
+                    1.935,
+                    1.435
+                  ],
+                  [
+                    0.27450980392156865,
+                    0.0392156862745098,
+                    0.3215686274509804
+                  ],
+                  0.75,
+                  "4.97 A"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          }
+        ],
+        "_ngl_original_stage_parameters": {},
+        "_ngl_repr_dict": {},
+        "_ngl_view_id": [],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_7b58fbd9c0044b5dab8bf29f6c3910da",
+        "picked": {}
+      }
+    },
+    "9b000e251655440d94c8c9233498cdfd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "7b43f23a7f7a4b12b9d36f64f86bf4ed": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_9b000e251655440d94c8c9233498cdfd",
+        "width": "900.0"
+      }
+    },
+    "bf47cfc82def48cd930ceef7a4114b49": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "7d0804137a524f68831191be77c3a5be": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "86b1cca78fcf476297fc45e148e6e7e3": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_bf47cfc82def48cd930ceef7a4114b49",
+        "max": 0,
+        "style": "IPY_MODEL_7d0804137a524f68831191be77c3a5be"
+      }
+    },
+    "09038b6533514e5f878bb9ed4f41e94a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "88d1d110ed894401a958eb2982d70a7b": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "f8c1fcbbc62a47468fcc10eae65e9ec7": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_09038b6533514e5f878bb9ed4f41e94a",
+        "max": 0,
+        "style": "IPY_MODEL_88d1d110ed894401a958eb2982d70a7b"
+      }
+    },
+    "fcb4f38c33e0404fb0a64457e2bcf818": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "bb70c2b0ea5b4e6e8ffe2bc0fa9e8784": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_86b1cca78fcf476297fc45e148e6e7e3",
+          "IPY_MODEL_f8c1fcbbc62a47468fcc10eae65e9ec7"
+        ],
+        "layout": "IPY_MODEL_fcb4f38c33e0404fb0a64457e2bcf818"
+      }
+    },
+    "cbcf64391a794551bbfb79f6bee63d0b": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_86b1cca78fcf476297fc45e148e6e7e3",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_f8c1fcbbc62a47468fcc10eae65e9ec7",
+          "value"
+        ]
+      }
+    },
+    "6a2b8e512b954910941167bacb05c154": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_86b1cca78fcf476297fc45e148e6e7e3",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_0ee4cf7bf0ea418aa5fb7571db91f9f2",
+          "frame"
+        ]
+      }
+    },
+    "70ad6f9d0353463e97b95ee4377dd134": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_86b1cca78fcf476297fc45e148e6e7e3",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_0ee4cf7bf0ea418aa5fb7571db91f9f2",
+          "max_frame"
+        ]
+      }
+    },
+    "9ccf3d0ee3f64cbe8e9f03017205b103": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_f8c1fcbbc62a47468fcc10eae65e9ec7",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_0ee4cf7bf0ea418aa5fb7571db91f9f2",
+          "max_frame"
+        ]
+      }
+    },
+    "2e4d72accf624de0b14c4aac16b0e228": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "bf3014e0276f477bab558aac4f0e724e": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "8203cc382f594972b904b353275eb609": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_2e4d72accf624de0b14c4aac16b0e228",
+        "style": "IPY_MODEL_bf3014e0276f477bab558aac4f0e724e"
+      }
+    },
+    "ca51e7771c2a49b59e9ee223d6226380": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "height": "300px",
+        "width": "100%"
+      }
+    },
+    "4e904d827b8444bc8c07500a00467f9f": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "3.0.8",
+      "state": {
+        "_camera_orientation": [],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_7dc1406934ef4311b4e2f7037f847fe4",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_196901e17a614bc3a89b4f9e914fba72",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {},
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "CRYST1    2.870    2.870    2.870  90.00  90.00  90.00 P 1\nMODEL     1\nATOM      1   Fe MOL     1       0.000   0.000   0.000  1.00  0.00          FE  \nATOM      2   Fe MOL     1       1.435   1.435   1.435  1.00  0.00          FE  \nATOM      3   Fe MOL     1       2.870   0.000   0.000  1.00  0.00          FE  \nATOM      4   Fe MOL     1       0.000   2.870   0.000  1.00  0.00          FE  \nATOM      5   Fe MOL     1       2.870   2.870   0.000  1.00  0.00          FE  \nATOM      6   Fe MOL     1       0.000   0.000   2.870  1.00  0.00          FE  \nATOM      7   Fe MOL     1       2.870   0.000   2.870  1.00  0.00          FE  \nATOM      8   Fe MOL     1       2.870   2.870   2.870  1.00  0.00          FE  \nATOM      9   Fe MOL     1       0.000   2.870   2.870  1.00  0.00          FE  \nENDMDL\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": false,
+              "name": "",
+              "ext": "pdb"
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "updateRepresentationsByName",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "spacefill",
+              0
+            ],
+            "kwargs": {
+              "radiusType": "covalent",
+              "radiusScale": 0.5
+            }
+          },
+          {
+            "component_index": 0,
+            "target": "compList",
+            "type": "call_method",
+            "methodName": "addRepresentation",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "unitcell"
+            ],
+            "kwargs": {
+              "sele": "all"
+            }
+          },
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [],
+            "kwargs": {
+              "cameraType": "orthographic"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setParameters",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "clipDist": 0
+              }
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "100%",
+              ""
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "",
+              "300px"
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "executeCode",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "\n                this.stage.mouseControls.add('hoverPick', (stage, pickingProxy) => {\n                    let tooltip = this.stage.tooltip;\n                    if(pickingProxy && pickingProxy.atom && !pickingProxy.bond){\n                        let atom = pickingProxy.atom;\n                        if (atom.structure.name.length > 0){\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index + \": \" + atom.structure.name;\n                        } else {\n                            tooltip.innerText = atom.atomname + \" atom index \" + atom.index;\n                        }\n                    } else if (pickingProxy && pickingProxy.bond){\n                        let bond = pickingProxy.bond;\n                        if (bond.structure.name.length > 0){\n                        tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond: \" + bond.structure.name;\n                        } else {\n                            tooltip.innerText = bond.atom1.atomname + \"-\" + bond.atom2.atomname + \" bond\";\n                        }\n                    } else if (pickingProxy && pickingProxy.unitcell){\n                        tooltip.innerText = \"Unit cell\";\n                    } else if (pickingProxy && pickingProxy.distance){\n                        let distance = pickingProxy.distance;\n                        tooltip.innerText = \"Distance: \" + distance.atom1.atomname + distance.atom1.index + \"-\" + distance.atom2.atomname + distance.atom2.index;\n                    } \n                });\n                "
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "viewerControls",
+            "type": "call_method",
+            "methodName": "center",
+            "reconstruc_color_scheme": false,
+            "args": [
+              [
+                1.43,
+                1.43,
+                1.43
+              ]
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "viewerControls",
+            "type": "call_method",
+            "methodName": "zoom",
+            "reconstruc_color_scheme": false,
+            "args": [
+              1.1
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "viewerControls",
+            "type": "call_method",
+            "methodName": "center",
+            "reconstruc_color_scheme": false,
+            "args": [
+              [
+                1.43,
+                1.43,
+                1.43
+              ]
+            ],
+            "kwargs": {}
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "cylinder",
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.435,
+                    1.435,
+                    1.435
+                  ],
+                  [
+                    1.0,
+                    0.8901960784313725,
+                    0.26666666666666666
+                  ],
+                  [
+                    0.1
+                  ],
+                  "Distance Fe0-Fe1: 2.49 \u00c5"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "text",
+                  [
+                    0.7175,
+                    0.7175,
+                    0.7175
+                  ],
+                  [
+                    1.0,
+                    0.8901960784313725,
+                    0.26666666666666666
+                  ],
+                  0.75,
+                  "2.49 A"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "cylinder",
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    2.87,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.22745098039215686,
+                    0.7647058823529411,
+                    0.4235294117647059
+                  ],
+                  [
+                    0.1
+                  ],
+                  "Distance Fe0-Fe2: 2.87 \u00c5"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "text",
+                  [
+                    1.735,
+                    0.1,
+                    0.0
+                  ],
+                  [
+                    0.22745098039215686,
+                    0.7647058823529411,
+                    0.4235294117647059
+                  ],
+                  0.75,
+                  "2.87 A"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "cylinder",
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    2.87,
+                    2.87
+                  ],
+                  [
+                    0.20392156862745098,
+                    0.3058823529411765,
+                    0.5294117647058824
+                  ],
+                  [
+                    0.1
+                  ],
+                  "Distance Fe0-Fe8: 4.06 \u00c5"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "text",
+                  [
+                    -0.2,
+                    1.435,
+                    1.435
+                  ],
+                  [
+                    0.20392156862745098,
+                    0.3058823529411765,
+                    0.5294117647058824
+                  ],
+                  0.75,
+                  "4.06 A"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "cylinder",
+                  [
+                    2.87,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    2.87,
+                    2.87
+                  ],
+                  [
+                    0.27450980392156865,
+                    0.0392156862745098,
+                    0.3215686274509804
+                  ],
+                  [
+                    0.1
+                  ],
+                  "Distance Fe2-Fe8: 4.97 \u00c5"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "addShape",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "shape",
+              [
+                [
+                  "text",
+                  [
+                    1.835,
+                    1.935,
+                    1.435
+                  ],
+                  [
+                    0.27450980392156865,
+                    0.0392156862745098,
+                    0.3215686274509804
+                  ],
+                  0.75,
+                  "4.97 A"
+                ]
+              ]
+            ],
+            "kwargs": {},
+            "fire_embed": true
+          }
+        ],
+        "_ngl_original_stage_parameters": {},
+        "_ngl_repr_dict": {},
+        "_ngl_serialize": true,
+        "_ngl_view_id": [],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_ca51e7771c2a49b59e9ee223d6226380",
+        "picked": {}
+      }
+    },
+    "33274a47209449cab4ca83b21b7d20e0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "a2dad828c8f04657b3a75558dc0e131f": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_33274a47209449cab4ca83b21b7d20e0",
+        "width": "900.0"
+      }
+    },
+    "367938078dd44d11b23d45f6569c4be5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "138f5cee26174210905ad927b39e74bc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "db02f8ed991c489cbc2ff86dad9e7150": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_367938078dd44d11b23d45f6569c4be5",
+        "max": 0,
+        "style": "IPY_MODEL_138f5cee26174210905ad927b39e74bc"
+      }
+    },
+    "2ece01bfaf7647c39194f788e89f7561": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "d4d5c9bcb676480b8a12edbe4e2fa397": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "a8034d5d53b544588f72361a10dc0972": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_2ece01bfaf7647c39194f788e89f7561",
+        "max": 0,
+        "style": "IPY_MODEL_d4d5c9bcb676480b8a12edbe4e2fa397"
+      }
+    },
+    "590d1d46ca994720bb62c6ee35911d25": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "196901e17a614bc3a89b4f9e914fba72": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_db02f8ed991c489cbc2ff86dad9e7150",
+          "IPY_MODEL_a8034d5d53b544588f72361a10dc0972"
+        ],
+        "layout": "IPY_MODEL_590d1d46ca994720bb62c6ee35911d25"
+      }
+    },
+    "9dcdf3d9e5354974b6e450cf2ccd457a": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_db02f8ed991c489cbc2ff86dad9e7150",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_a8034d5d53b544588f72361a10dc0972",
+          "value"
+        ]
+      }
+    },
+    "be166c1e1b744362ab33349f268bb0c0": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_db02f8ed991c489cbc2ff86dad9e7150",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_4e904d827b8444bc8c07500a00467f9f",
+          "frame"
+        ]
+      }
+    },
+    "7f6bf9d7e4b74dcb97ed5393ee928b75": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_db02f8ed991c489cbc2ff86dad9e7150",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_4e904d827b8444bc8c07500a00467f9f",
+          "max_frame"
+        ]
+      }
+    },
+    "1209b27c83de4f29a7cf5f3b75e52d38": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_a8034d5d53b544588f72361a10dc0972",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_4e904d827b8444bc8c07500a00467f9f",
+          "max_frame"
+        ]
+      }
+    },
+    "c6e244db463e44a0a126ee022fc8cd3b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "2.0.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "6f316747a93b44008454566eaf1f1601": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {}
+    },
+    "7dc1406934ef4311b4e2f7037f847fe4": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "2.0.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_c6e244db463e44a0a126ee022fc8cd3b",
+        "style": "IPY_MODEL_6f316747a93b44008454566eaf1f1601"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "6bf53679c08b42b994b65115e6a88f9d"}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "4e904d827b8444bc8c07500a00467f9f"}
+</script>
+
+</body>
+</html>

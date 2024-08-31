@@ -16,7 +16,7 @@ The problem of software reliability and reproducibility of the results in comput
 
     I developed an interface for [force based QM/MM](https://wiki.fysik.dtu.dk/ase/ase/calculators/qmmm.html?highlight=qmmm#force-based-qm-mm) coupling in a form of standard [ASE calculator](https://wiki.fysik.dtu.dk/ase/ase/calculators/calculators.html#module-ase.calculators). I also contributed to the development of few minimisation algorithms as well as to testing of various parts of ASE.
 
-- `matscipy` - [Python materials science tools built around the ASE](https://github.com/libAtoms/matscipy)
+- `matscipy` - [Python materials science tools built around the ASE](https://github.com/libAtoms/matscipy) <d-cite key="Grigorev2024_matscipy"></d-cite>.
 
     Here my main contribution is a [set of tools](https://github.com/libAtoms/matscipy/blob/master/matscipy/dislocation.py) for manipulation and analysis of atomistic configurations containing various types of dislocations in cubic crystals.
 

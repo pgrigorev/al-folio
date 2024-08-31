@@ -6,7 +6,7 @@ subtitle: <a href="https://www.im2np.fr/fr"> Institut Matériaux Microélectroni
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic_08_24.jpg
   image_circular: false # crops the image to make it circular
   address: >
 #    <p>555 your office number</p>

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://www.im2np.fr/fr"> Institut Matériaux Microélectronique Nanosciences de Provence </a> • <a href="https://www.im2np.fr/fr/equipe-reactivite-et-diffusion-aux-interfaces-rdi"> Equipe Réactivité et Diffusion aux Interfaces </a>
+subtitle:  <a href="https://mateis.insa-lyon.fr/fr/page/metal"> Metals and Alloys group (METAL) </a> • <a href="https://mateis.insa-lyon.fr/en"> Matériaux Ingénierie et Science laboratory (MatéIS) </a>  • <a href="https://www.insa-lyon.fr/">  INSA Lyon </a> 
 
 profile:
   align: right
@@ -18,9 +18,9 @@ selected_papers: True # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Research Fellow working in the field of computational material science.
+I am a Researcher (Chargé de Recherche [CNRS](https://carrieres.cnrs.fr/en/identity-card/)) working in the field of computational material science.
 I am interested in application and development of simulation methods bridging different length and time scales.
-Recently I have been working on incorporating methods of reproducible research, uncertainty quantification and machine learning in multiscale modelling approach.
+Recently I have been working on incorporating methods of reproducible research, uncertainty quantification and machine learning in multiscale modelling of materials.
 
 ###### **Short bio**
 
@@ -29,6 +29,6 @@ The same year I enrolled in a Ph.D. program shared between [Ghent University](ht
 However I spent most of my time at [Belgian Nuclear Research Centre SCK•CEN](https://www.sckcen.be/en) in Mol, Belgium working on my research project together with [Structural Materials expert group](https://www.sckcen.be/en/expertises/materials/safe-operation).
 
 I defended my **Ph.D. in April 2017** and, shortly after that, joined [Warwick Centre for Predictive Modelling](https://warwick.ac.uk/fac/sci/wcpm/) as a **Research Fellow**.
-In **December 2020** I started as a **postdoc** at the [Départment Théorie et Simulation Numérique](https://www.cinam.univ-mrs.fr/cinam/team/theorie-et-simulation-numerique/) of [Centre Interdisciplinaire de Nanoscience de Marseille (CINaM)](https://www.cinam.univ-mrs.fr). I moved to [Institut Matériaux Microélectronique Nanosciences de Provence](https://www.im2np.fr/fr) for another **postdoc** in **March 2024**. 
+In **December 2020** I started as a **postdoc** at the [Départment Théorie et Simulation Numérique](https://www.cinam.univ-mrs.fr/cinam/team/theorie-et-simulation-numerique/) of [Centre Interdisciplinaire de Nanoscience de Marseille (CINaM)](https://www.cinam.univ-mrs.fr). Then I moved to [Institut Matériaux Microélectronique Nanosciences de Provence](https://www.im2np.fr/fr) for another **postdoc** in **March 2024**. Finally, in **February 2025** I joined [METAL group](https://mateis.insa-lyon.fr/fr/page/metal) of [MatéIS laboratory](ttps://mateis.insa-lyon.fr/en) as a **[CNRS](https://carrieres.cnrs.fr/en/identity-card/) Researcher**.
 
-For more information please go to the [CV page](/CV/). Traditional detailed version of my CV can be downloaded here: <a href="/assets/pdf/Grigorev_CV.pdf" target="_blank" title="download CV"> <i class="far fa-file-pdf" aria-hidden="true"></i> CV</a>. You can find my publications with all the details and some pdf versions on the [publications page](/publications/).
+For more information please go to the [CV page](/CV/). Traditional detailed version of my CV can be downloaded here: <a href="/assets/pdf/Grigorev_CV.pdf" target="_blank" title="download CV"> <i class="far fa-file-pdf" aria-hidden="true"></i> CV</a>. You can find my publications with all the details and open access pdf versions on the [publications page](/publications/).
